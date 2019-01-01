@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">EtilaafTask</string>
+
+
+
+    <string name="Local">Local</string>
+    <string name="Remote">Remote</string>
+
+
+    <string-array name="options">
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

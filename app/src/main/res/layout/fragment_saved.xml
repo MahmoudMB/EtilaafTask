@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.mahmoudbahaa.etilaaftask.SavedFragment">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:layout_height="match_parent">
+
+
+      <android.support.design.widget.TabLayout
+          android:id="@+id/tabLayout"
+          android:background="@color/colorPrimary"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          app:tabSelectedTextColor="@color/colorPrimaryDark"
+          app:tabTextColor="#515151"
+          app:tabIndicatorColor="@color/colorPrimaryDark"
+
+          >
+
+          <android.support.design.widget.TabItem
+              android:id="@+id/tabItem_Stories"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Stories"
+
+              />
+
+          <android.support.design.widget.TabItem
+              android:id="@+id/tabItem_Photos"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Photos"
+              />
+
+
+      </android.support.design.widget.TabLayout>
+
+
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:id="@+id/saved_container"
+          android:layout_height="match_parent">
+
+
+      </FrameLayout>
+
+
+
+  </LinearLayout>
+
+</FrameLayout>

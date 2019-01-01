@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mahmoudbahaa.etilaaftask.utilities.ui.story.StoryDetail">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/StoryDetail_toolbar"
+        android:layout_width="match_parent"
+        android:minHeight="?actionBarSize"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        >
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_story"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Stories"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginStart="8dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/StoryDetail_Like"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:src="@drawable/ic_baseline_star_24px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnpress"
+                />
+
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:src="@drawable/ic_baseline_share_24px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnpress"
+               android:id="@+id/StoryDetail_share"
+                />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+
+<TextView
+    android:id="@+id/StoryDetail_Title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxLines="2"
+    android:text="ffffffff fkdvvk;d dlkvl;dkl;klvfkl;dkfffffffffffffffffffff"
+    android:layout_margin="10dp"
+    android:fontFamily="sans-serif-medium"
+    android:textSize="20sp"
+    android:textColor="#000000"
+    />
+
+
+
+<TextView
+    android:id="@+id/StoryDetail_Date"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1 / 1 / 2018"
+
+    android:layout_marginStart="10dp"
+    android:layout_marginBottom="10dp"
+    />
+
+
+
+
+    <ImageView
+        android:id="@+id/StoryDetail_image"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/StoryDetail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>

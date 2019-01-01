@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mahmoudbahaa.etilaaftask.utilities.ui.main.MainActivity">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Main_toolbar"
+        android:layout_width="match_parent"
+        android:minHeight="?actionBarSize"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <Spinner
+                android:id="@+id/Main_spinner"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:overlapAnchor="false"
+                >
+
+
+            </Spinner>
+
+
+
+            <ImageView
+                android:id="@+id/Main_Refresh"
+               android:layout_weight="1"
+                android:layout_width="0dp"
+  android:src="@drawable/ic_baseline_autorenew_24px"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/btnpress"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/Main_Category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+
+
+            android:background="@color/CategoryListBackground"
+            android:id="@+id/Stories_CategoryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:id="@+id/Stories_Line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000"
+            >
+
+        </View>
+    </LinearLayout>
+
+
+
+<FrameLayout
+    android:id="@+id/Main_FragmentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</FrameLayout>
+
+
+
+
+
+</LinearLayout>

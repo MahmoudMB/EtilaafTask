@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    tools:context="com.example.mahmoudbahaa.etilaaftask.utilities.ui.photo.PhotoDetail">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/PhotoDetail_toolbar"
+        android:layout_width="match_parent"
+        android:minHeight="?actionBarSize"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        >
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_photo"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Photos"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginStart="8dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/PhotoDetail_like"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:src="@drawable/ic_baseline_star_24px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnpress"
+                />
+
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:id="@+id/PhotoDetail_share"
+                android:src="@drawable/ic_baseline_share_24px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnpress"
+                />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/PhotoDetail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/PhotoDetail_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/PhotoDetail_summery"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/PhotoDetail_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="ffffffff fkdvvk;d dlkvl;dkl;klvfkl;dkfffffffffffffffffffff"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                />
+
+
+            <TextView
+                android:id="@+id/PhotoDetail_publishedAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 / 1 / 2018"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     android:id="@+id/expandedImageView"
+android:visibility="invisible"
+        />
+
+
+</LinearLayout>
